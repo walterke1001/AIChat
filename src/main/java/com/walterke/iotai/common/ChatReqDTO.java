@@ -10,9 +10,9 @@ import java.util.Map;
 @Data
 @NoArgsConstructor
 public class ChatReqDTO implements Serializable {
-    private String model = "";
+    private String model;
     private String chatId;
-    private boolean stream;
+    private boolean stream = true;
     private boolean detail;
     private Map<String, String> variables;
     private List<Message> messages;
